@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hùng Vi Mạnh | Chuyên gia tư vấn chuyển đổi số & tự động hóa AI</title>
+    <meta name="description" content="Tư vấn kiến trúc hệ thống SaaS, thiết kế Workflow Engine và triển khai tự động hóa quy trình doanh nghiệp bằng AI bởi Chuyên gia Hùng Vi Mạnh.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#161F30',
+                            accent: '#10B981', /* Emerald representing growth/cashflow */
+                            tech: '#6366F1', /* Indigo representing Deep Tech/AI */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0B0F19;
+            color: #F3F4F6;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- Header / Nav -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-brand-accent to-brand-tech bg-clip-text text-transparent">
+                HUNG VI MANH<span class="text-brand-accent"></span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-400">
+                <a href="#about" class="hover:text-white transition">Định Vị</a>
+                <a href="#experience" class="hover:text-white transition">Kinh Nghiệm</a>
+                <a href="#du-an" class="hover:text-white transition">Dự Án</a>
+                <a href="#ky-nang" class="hover:text-white transition">Kỹ Năng</a>
+                <a href="https://blog.herommt.io.vn" target="_blank" rel="noopener" class="hover:text-white transition">Blog</a>
+                <a href="#contact" class="hover:text-white transition">Liên Hệ</a>
+            </nav>
+            <div class="flex items-center space-x-4 hidden">
+                <a href="#audit" class="px-5 py-2.5 bg-gradient-to-r from-brand-accent to-emerald-600 hover:from-emerald-400 hover:to-brand-accent text-brand-dark font-bold text-sm rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-brand-accent/20">
+                    <i class="fa-solid fa-bolt mr-2"></i>Nhận tư vấn miễn phí
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 min-h-[90vh]">
+        <div class="flex-1 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-brand-tech/10 border border-brand-tech/20 rounded-full text-brand-tech text-xs font-semibold">
+                <span class="w-2 h-2 rounded-full bg-brand-tech animate-pulse"></span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                Xây Dựng <span class="bg-gradient-to-r from-brand-accent to-brand-tech bg-clip-text text-transparent">Cỗ Máy Vận Hành</span> Tự Động Cho Doanh Nghiệp
+            </h1>
+            <p class="text-lg text-gray-400 max-w-2xl leading-relaxed">
+                Đội của bạn đang làm đúng việc hay vẫn mắc kẹt trong những việc lặp đi lặp lại, duyệt thủ công, nhắn tin qua lại và tổng hợp Excel mỗi ngày? Hùng giúp chủ doanh nghiệp chuẩn hóa quy trình, tự động hóa vận hành và xây hệ thống chạy ổn định hơn mà không cần hiểu kỹ thuật.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto text-center px-8 py-4 bg-brand-tech text-white font-bold rounded-xl hover:bg-indigo-500 transition shadow-lg shadow-brand-tech/30">
+                    Liên Hệ
+                </a>
+                <a href="#audit" class="w-full sm:w-auto text-center px-8 py-4 bg-gray-800 text-gray-200 border border-gray-700 hover:bg-gray-700 font-bold rounded-xl transition hidden">
+                    Book Lịch Tư Vấn 1:1
+                </a>
+            </div>
+        </div>
+        <!-- OPC Capability Map -->
+        <div class="flex-1 w-full max-w-md lg:max-w-none">
+            <div class="relative bg-brand-card border border-gray-800 p-8 rounded-2xl shadow-2xl overflow-hidden group">
+                <div class="absolute -top-16 -right-16 w-32 h-32 bg-brand-accent/10 rounded-full blur-3xl"></div>
+                <div class="absolute -bottom-16 -left-16 w-32 h-32 bg-brand-tech/10 rounded-full blur-3xl"></div>
+                <h3 class="text-lg font-bold text-gray-300 mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-nodes text-brand-accent"></i>
+                    Năng Lực Cốt Lõi
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-4 bg-brand-dark/60 border border-gray-800 rounded-xl">
+                        <span class="text-xs font-semibold text-brand-accent uppercase tracking-wider block mb-1">Nhìn đúng vấn đề</span>
+                        <p class="font-bold text-white text-sm">Giúp bạn xác định đúng chỗ đang làm đội ngũ mất thời gian nhất trước khi bỏ tiền vào bất kỳ giải pháp nào.</p>
+                    </div>
+                    <div class="p-4 bg-brand-dark/60 border border-gray-800 rounded-xl">
+                        <span class="text-xs font-semibold text-brand-tech uppercase tracking-wider block mb-1">Quy trình tự chạy</span>
+                        <p class="font-bold text-white text-sm">Biến những việc đang cần người ngồi làm thủ công thành quy trình tự động. Đội ngũ bớt bận, bạn bớt phải theo dõi.</p>
+                    </div>
+                    <div class="p-4 bg-brand-dark/60 border border-gray-800 rounded-xl">
+                        <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider block mb-1">Hệ thống không phụ thuộc một người</span>
+                        <p class="font-bold text-white text-sm">Khi công ty lớn dần, hệ thống vẫn chạy dù bạn vắng mặt hay đội ngũ có thay đổi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Social Proof / Stats -->
+    <section class="bg-brand-card/50 border-y border-gray-800/80 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl md:text-5xl font-extrabold text-brand-accent">7+</p>
+                <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest font-semibold">Năm Thực Chiến</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-extrabold text-brand-tech">70+</p>
+                <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest font-semibold">Doanh Nghiệp Đã Phục Vụ</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-extrabold text-emerald-400">10k+</p>
+                <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest font-semibold">Người Dùng Hoạt Động</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-extrabold text-indigo-400">100%</p>
+                <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest font-semibold">Tự Động Hóa</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Academic Background & Philosophical Statement -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+        <div class="flex-1 space-y-6">
+            <h2 class="text-xs font-extrabold tracking-widest text-brand-accent uppercase">Về Hùng Vi Mạnh</h2>
+            <p class="text-3xl font-extrabold text-white">Hơn 7 Năm Đồng Hành Cùng Doanh Nghiệp Trong Chuyển Đổi Số & Tự Động Hóa</p>
+            <p class="text-gray-400 text-sm leading-relaxed">
+                 Hùng Vi Mạnh là chuyên gia tư vấn chuyển đổi số và thiết kế giải pháp phần mềm cho doanh nghiệp, với hơn 7 năm kinh nghiệm trong lĩnh vực công nghệ và tự động hóa vận hành. Anh đã tham gia tư vấn, thiết kế và triển khai nhiều hệ thống phục vụ doanh nghiệp ở đa dạng lĩnh vực, góp phần chuẩn hóa quy trình, nâng cao hiệu suất vận hành và xây dựng nền tảng tăng trưởng bền vững. Bên cạnh hoạt động chuyên môn, anh còn tham gia giảng dạy Công nghệ Thông tin ở bậc đại học, tạo nên sự kết hợp giữa tư duy hệ thống, kinh nghiệm thực tiễn và khả năng truyền đạt rõ ràng những vấn đề phức tạp.
+            </p>
+        </div>
+        <div class="flex-1 bg-brand-card border border-gray-800 p-8 rounded-2xl w-full">
+            <h4 class="font-bold text-white mb-6 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-brand-accent"></i> Học Vấn & Nền Tảng</h4>
+            <div class="space-y-6">
+                <div class="border-l border-gray-700 pl-4 relative">
+                    <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-brand-accent rounded-full"></span>
+                    <h5 class="font-bold text-sm text-white">Thạc sĩ Hệ thống Thông tin</h5>
+                    <p class="text-xs text-gray-400">Đại học Công nghệ – Đại học Quốc gia Hà Nội</p>
+                </div>
+                <div class="border-l border-gray-700 pl-4 relative">
+                    <span class="absolute -left-1.5 top-1.5 w-3 h-3 bg-brand-tech rounded-full"></span>
+                    <h5 class="font-bold text-sm text-white">Cử nhân Công nghệ Thông tin</h5>
+                    <p class="text-xs text-gray-400">Đại học Công nghệ – Đại học Quốc gia Hà Nội</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <section id="experience" class="py-24 px-6 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-xs font-extrabold tracking-widest text-brand-tech uppercase">Hành Trình Nghề Nghiệp</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Kinh Nghiệm Làm Việc</p>
+                <p class="text-gray-400 text-sm">Hành trình từ phát triển phần mềm, dẫn dắt kỹ thuật đến tư vấn giải pháp và giảng dạy.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-6 top-0 bottom-0 w-px bg-gray-800"></div>
+
+                <div class="space-y-8">
+                    <!-- Role 1: Lập trình viên -->
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-1 w-12 h-12 bg-brand-dark border border-gray-700 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-terminal text-brand-accent"></i>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+                            <h3 class="text-xl font-bold text-white">Lập Trình Viên</h3>
+                            <span class="text-xs font-semibold text-brand-accent bg-brand-accent/10 px-3 py-1 rounded-full w-fit">Điểm xuất phát</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Bắt đầu hành trình bằng việc trực tiếp viết code và xây dựng phần mềm cho các doanh nghiệp. Hiểu rõ cách phần mềm vận hành từ bên trong, và quan trọng hơn là hiểu được bài toán thực tế của người dùng cuối là gì.
+                        </p>
+                    </div>
+
+                    <!-- Role 2: Technical Leader -->
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-1 w-12 h-12 bg-brand-dark border border-gray-700 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-users text-brand-tech"></i>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+                            <h3 class="text-xl font-bold text-white">Technical Leader</h3>
+                            <span class="text-xs font-semibold text-brand-tech bg-brand-tech/10 px-3 py-1 rounded-full w-fit">Dẫn dắt đội ngũ</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Chịu trách nhiệm định hướng kỹ thuật, hỗ trợ đội ngũ giải quyết vấn đề khó, và đảm bảo sản phẩm được xây đúng hướng thay vì chỉ tập trung vào kỹ thuật.
+                        </p>
+                    </div>
+
+                    <!-- Role 3: Solution Architect -->
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-1 w-12 h-12 bg-brand-dark border border-gray-700 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-sitemap text-emerald-400"></i>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+                            <h3 class="text-xl font-bold text-white">Solution Architect</h3>
+                            <span class="text-xs font-semibold text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full w-fit">Tư vấn & thiết kế giải pháp</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Làm việc trực tiếp với doanh nghiệp để hiểu bài toán, sau đó thiết kế giải pháp phần mềm phù hợp cả về quy trình lẫn hệ thống. Vai trò này đòi hỏi tư duy vừa kỹ thuật vừa kinh doanh, và khả năng giải thích rõ ràng cho người ra quyết định.
+                        </p>
+                    </div>
+
+                    <!-- Role 4: SaaS Co-founder -->
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-1 w-12 h-12 bg-brand-dark border border-gray-700 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-rocket text-indigo-400"></i>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+                            <h3 class="text-xl font-bold text-white">SaaS Co-founder</h3>
+                            <span class="text-xs font-semibold text-indigo-400 bg-indigo-400/10 px-3 py-1 rounded-full w-fit">Xây dựng sản phẩm</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Đồng sáng lập một nền tảng phần mềm SaaS phục vụ tự động hóa quy trình vận hành cho doanh nghiệp. Vai trò này kết hợp cả kỹ thuật lẫn định hướng sản phẩm. Vừa xây hệ thống, vừa hiểu nỗi đau người dùng để sản phẩm thực sự mang lại giá trị.
+                        </p>
+                    </div>
+
+                    <!-- Role 5: Giảng viên -->
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-1 w-12 h-12 bg-brand-dark border border-gray-700 rounded-xl flex items-center justify-center">
+                            <i class="fa-solid fa-chalkboard-user text-amber-400"></i>
+                        </div>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+                            <h3 class="text-xl font-bold text-white">Giảng Viên Đại Học</h3>
+                            <span class="text-xs font-semibold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full w-fit">Giảng dạy CNTT</span>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Lập trình, Cơ sở dữ liệu, Kiến trúc phần mềm, Phân tích thiết kế giải pháp và các môn học liên quan đến Công nghệ Thông tin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Services / Productized Offers -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto hidden">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-xs font-extrabold tracking-widest text-brand-accent uppercase">Dịch Vụ Đã Sản Phẩm Hóa</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-white">Bạn Không Thuê Giờ Làm, Bạn Mua Kết Quả Tăng Trưởng</p>
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm">Tôi đóng gói năng lực kỹ thuật cao cấp thành các gói giải pháp có chi phí rõ ràng, thời gian hoàn thành cam kết và không rủi ro cho bạn.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Offer 1 -->
+            <div class="bg-brand-card border border-gray-800 p-8 rounded-2xl relative flex flex-col justify-between hover:border-brand-accent/50 transition duration-300">
+                <div>
+                    <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-server text-brand-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tư Vấn Thiết Kế SaaS & Multi-Tenant</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Thiết kế kiến trúc hệ thống dữ liệu dùng chung chịu tải cao, module quản trị phân quyền (Role & Permission), đảm bảo khả năng scale lớn không cần đập đi xây lại.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Thiết kế Database & API chuẩn SaaS</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Tối ưu chi phí hạ tầng Cloud/VPS</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Bàn giao Blueprint & Lộ trình code</li>
+                    </ul>
+                </div>
+                <a href="#audit" class="block w-full text-center py-3 bg-brand-dark border border-gray-700 hover:border-brand-accent text-white font-semibold rounded-lg transition text-sm">Book Lịch Tư Vấn</a>
+            </div>
+
+            <!-- Offer 2 -->
+            <div class="bg-brand-card border-2 border-brand-tech p-8 rounded-2xl relative flex flex-col justify-between hover:border-brand-tech/80 transition duration-300">
+                <span class="absolute -top-3 right-6 bg-brand-tech text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Bán chạy nhất</span>
+                <div>
+                    <div class="w-12 h-12 bg-brand-tech/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-gears text-brand-tech text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Xây Dựng Workflow & AI Automation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Chuyển hóa quy trình vận hành cồng kềnh thành các hệ thống tự động hóa. Tích hợp AI Agent giải quyết phê duyệt, báo cáo tự động, giảm 80% tác vụ thủ công.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-regular fa-circle-check text-brand-tech mr-2"></i> Thiết kế Core Engine Workflow tự động</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-tech mr-2"></i> Tích hợp AI Agent trả lời/xử lý tự động</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-tech mr-2"></i> Tích hợp CRM/ERP (MISA, Bitrix24)</li>
+                    </ul>
+                </div>
+                <a href="#audit" class="block w-full text-center py-3 bg-brand-tech text-white font-semibold rounded-lg hover:bg-indigo-500 transition text-sm">Liên Hệ Triển Khai</a>
+            </div>
+
+            <!-- Offer 3 -->
+            <div class="bg-brand-card border border-gray-800 p-8 rounded-2xl relative flex flex-col justify-between hover:border-brand-accent/50 transition duration-300">
+                <div>
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-code text-emerald-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Đồng Hành Phát Triển MVP Thần Tốc</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Cùng bạn chuyển hóa ý tưởng thành bản MVP thực tế bằng công nghệ AI Vibecode (Prompting, Claude Code, VPS). Kiểm chứng nhanh nhu cầu thị trường.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8">
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Hoàn thành MVP chạy thực tế trong 4 tuần</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Thiết lập phễu tự thu tiền thuê bao (SaaS)</li>
+                        <li><i class="fa-regular fa-circle-check text-brand-accent mr-2"></i> Đào tạo đội ngũ bàn giao trơn tru</li>
+                    </ul>
+                </div>
+                <a href="#audit" class="block w-full text-center py-3 bg-brand-dark border border-gray-700 hover:border-emerald-400 text-white font-semibold rounded-lg transition text-sm">Bắt Đầu Ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Successful Projects -->
+    <section id="du-an" class="py-24 px-6 bg-brand-card/20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-xs font-extrabold tracking-widest text-brand-tech uppercase">Dự Án Thành Công</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Những Bài Toán Thực Tế Tôi Đã Giải</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-tech uppercase bg-brand-tech/10 px-3 py-1 rounded-full">Phân phối bán hàng</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Hệ thống DMS cho doanh nghiệp sản xuất</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Kết nối hoạt động bán hàng và phân phối cho doanh nghiệp sản xuất với khoảng 1.000 cửa hàng trên toàn quốc, đồng thời khai thác dữ liệu và tri thức vận hành hiệu quả hơn.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-accent uppercase bg-brand-accent/10 px-3 py-1 rounded-full">Bất động sản</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Số hóa quy trình đấu thầu và quản lý tiến độ</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Số hóa quy trình đấu thầu, quản lý thầu phụ và theo dõi tiến độ triển khai cho các tập đoàn trong lĩnh vực bất động sản.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-400/10 px-3 py-1 rounded-full">Mua sắm doanh nghiệp</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Giải pháp Procurement toàn trình</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Triển khai giải pháp quản lý xuyên suốt từ mua hàng, nhận hàng, quản lý kho đến thanh toán và tạm ứng cho doanh nghiệp quy mô lớn.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-indigo-400 uppercase bg-indigo-400/10 px-3 py-1 rounded-full">Fintech</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Ứng dụng tài chính Lending P2P</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Tham gia xây dựng ứng dụng tài chính theo mô hình cho vay ngang hàng, hướng đến trải nghiệm đơn giản và khả năng tiếp cận tốt hơn cho người dùng.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-amber-400 uppercase bg-amber-400/10 px-3 py-1 rounded-full">Vận hành chuỗi</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Nền tảng cho 70+ chuỗi F&B, bán lẻ và dịch vụ</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Xây dựng nền tảng hỗ trợ vận hành cho hơn 70 chuỗi với các chức năng như checklist điện tử, đào tạo nội bộ, chấm công và quản lý chi phí.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-tech uppercase bg-brand-tech/10 px-3 py-1 rounded-full">Giáo dục đại học</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Tư vấn số hóa quy trình trong trường đại học</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Tư vấn chuyển đổi các quy trình nội bộ trong môi trường đại học theo hướng số hóa, rõ ràng hơn trong vận hành và thuận tiện hơn cho các bên liên quan.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-accent uppercase bg-brand-accent/10 px-3 py-1 rounded-full">Marketing & AI</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Framework marketing tối ưu nguồn lực bằng AI</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Xây dựng framework marketing cho doanh nghiệp vừa và nhỏ ứng dụng AI, giúp rút gọn đội ngũ vận hành từ 7–10 người xuống còn 1–3 người mà vẫn duy trì được năng suất đầu ra.</p>
+                </div>
+
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-400/10 px-3 py-1 rounded-full">Tự động hóa vận hành</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Ứng dụng AI vào quy trình nội bộ doanh nghiệp</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Triển khai tự động hóa các quy trình vận hành thực tế bằng các công cụ AI thế hệ mới, giúp đội ngũ tập trung vào công việc tạo ra giá trị thay vì các tác vụ lặp lại.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ky-nang" class="py-24 px-6 border-t border-gray-800 bg-brand-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-14">
+                <h2 class="text-xs font-extrabold tracking-widest text-brand-tech uppercase">Kỹ Năng Chuyên Môn</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">4 Nhóm Năng Lực Cốt Lõi</p>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm">Tập trung vào những năng lực giúp doanh nghiệp vận hành rõ ràng hơn, ra quyết định nhanh hơn và triển khai hiệu quả hơn.</p>
+            </div>
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-tech uppercase bg-brand-tech/10 px-3 py-1 rounded-full">Thiết kế hệ thống phần mềm</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Biến nhu cầu vận hành thành cấu trúc giải pháp rõ ràng</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Làm rõ bài toán, luồng xử lý và cách các bộ phận phối hợp với nhau để hệ thống được xây đúng ngay từ đầu và thuận lợi cho mở rộng về sau.</p>
+                </div>
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-brand-accent uppercase bg-brand-accent/10 px-3 py-1 rounded-full">Tư vấn chuyển đổi số</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Ưu tiên số hóa đúng chỗ trước khi đầu tư thêm công cụ</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Rà soát quy trình, xác định điểm nghẽn và đề xuất lộ trình triển khai phù hợp với nguồn lực, thay vì số hóa dàn trải nhưng thiếu hiệu quả.</p>
+                </div>
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-emerald-400 uppercase bg-emerald-400/10 px-3 py-1 rounded-full">AI ứng dụng</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Đưa AI vào công việc thực tế theo hướng dễ dùng và tạo giá trị</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Tập trung vào các tình huống có thể rút ngắn thời gian xử lý, giảm việc lặp lại và hỗ trợ đội ngũ làm việc hiệu quả hơn mỗi ngày.</p>
+                </div>
+                <div class="p-8 bg-brand-card border border-gray-800 rounded-2xl">
+                    <span class="text-xs font-bold text-amber-400 uppercase bg-amber-400/10 px-3 py-1 rounded-full">Đào tạo</span>
+                    <p class="text-white text-lg font-bold mt-6 mb-3">Chuyển nội dung phức tạp thành cách diễn giải dễ hiểu</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Kết hợp trải nghiệm triển khai thực tế với hoạt động giảng dạy để giúp đội ngũ, quản lý và đối tác cùng hiểu đúng vấn đề và cùng đi nhanh hơn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnet / Audit Hook (Step 4 Connection) -->
+    <section id="audit" class="py-24 px-6 bg-gradient-to-b from-brand-dark to-brand-card border-t border-gray-800 hidden">
+        <div class="max-w-5xl mx-auto bg-gradient-to-r from-brand-tech/20 to-brand-accent/20 border border-brand-accent/30 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4">
+                <span class="text-[120px] font-bold text-white/5 select-none pointer-events-none">FREE</span>
+            </div>
+            <span class="text-xs font-bold text-brand-accent uppercase tracking-widest bg-brand-accent/10 px-4 py-1.5 rounded-full">QUÀ TẶNG KHỞI ĐẦU</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white mt-6 mb-4">Audit Tự Động Hóa Hệ Thống 15 Phút</h3>
+            <p class="text-gray-300 max-w-2xl mx-auto text-sm leading-relaxed mb-8">
+                Bạn đang tốn quá nhiều thời gian duyệt việc thủ công? Bạn nghi ngờ hệ thống công nghệ hiện tại của mình hoạt động kém hiệu quả hoặc không thể scale? Để lại thông tin để nhận buổi đánh giá quy trình doanh nghiệp chi tiết và giải pháp hoàn toàn miễn phí từ tôi.
+            </p>
+            
+            <form action="mailto:hungvimanh.cntt@gmail.com" method="post" enctype="text/plain" class="max-w-md mx-auto space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" name="Ten" placeholder="Tên của bạn" required class="w-full px-4 py-3 bg-brand-dark border border-gray-700 rounded-lg text-white text-sm focus:outline-none focus:border-brand-accent">
+                    <input type="text" name="Zalo" placeholder="Số Zalo liên hệ" required class="w-full px-4 py-3 bg-brand-dark border border-gray-700 rounded-lg text-white text-sm focus:outline-none focus:border-brand-accent">
+                </div>
+                <input type="email" name="Email" placeholder="Email của bạn" required class="w-full px-4 py-3 bg-brand-dark border border-gray-700 rounded-lg text-white text-sm focus:outline-none focus:border-brand-accent">
+                <textarea name="NoiDau" placeholder="Nỗi đau/Điểm tắc nghẽn quy trình lớn nhất của bạn..." rows="3" class="w-full px-4 py-3 bg-brand-dark border border-gray-700 rounded-lg text-white text-sm focus:outline-none focus:border-brand-accent"></textarea>
+                <button type="submit" class="w-full py-4 bg-brand-accent hover:bg-emerald-400 text-brand-dark font-extrabold rounded-lg transition duration-300 transform hover:-translate-y-0.5">
+                    Gửi Đăng Ký Tư Vấn Miễn Phí
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 border-t border-gray-800 bg-brand-card/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center space-y-4 mb-14">
+                <h2 class="text-xs font-extrabold tracking-widest text-brand-accent uppercase">Liên Hệ</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Bắt Đầu Bằng Một Cuộc Trò Chuyện</p>
+                <p class="text-gray-400 max-w-2xl mx-auto text-sm">Chọn kênh bạn tiện nhất. Hùng thường phản hồi trong vòng 24 giờ.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="mailto:hungvimanh.cntt@gmail.com" class="bg-brand-card border border-gray-800 rounded-2xl p-6 hover:border-brand-accent/50 transition duration-300 block">
+                    <div class="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-envelope text-brand-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Email</h3>
+                    <p class="text-sm text-gray-400 mb-3">Phù hợp nếu bạn muốn mô tả rõ bài toán doanh nghiệp đang gặp phải.</p>
+                    <p class="text-sm font-semibold text-white break-all">hungvimanh.cntt@gmail.com</p>
+                </a>
+                <a href="tel:0969064100" class="bg-brand-card border border-gray-800 rounded-2xl p-6 hover:border-brand-tech/50 transition duration-300 block">
+                    <div class="w-12 h-12 bg-brand-tech/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-phone text-brand-tech text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Zalo / Điện thoại</h3>
+                    <p class="text-sm text-gray-400 mb-3">Phù hợp nếu bạn muốn trao đổi nhanh và nhận phản hồi trực tiếp.</p>
+                    <p class="text-sm font-semibold text-white">0969 064 100</p>
+                </a>
+                <a href="https://www.linkedin.com/in/hung-vi-manh-b91714216" target="_blank" class="bg-brand-card border border-gray-800 rounded-2xl p-6 hover:border-emerald-400/50 transition duration-300 block">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-brands fa-linkedin text-emerald-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">LinkedIn</h3>
+                    <p class="text-sm text-gray-400 mb-3">Phù hợp nếu bạn muốn xem thêm hồ sơ chuyên môn và kết nối lâu dài.</p>
+                    <p class="text-sm font-semibold text-white">Kết nối trên LinkedIn</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-brand-dark py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <a href="#" class="text-lg font-extrabold tracking-tight bg-gradient-to-r from-brand-accent to-brand-tech bg-clip-text text-transparent">
+                    HUNG VI MANH<span class="text-brand-accent"></span>
+                </a>
+                <p class="text-xs text-gray-500 mt-2">© 2026 Hung Vi Manh. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-gray-400 text-lg">
+                <a href="mailto:hungvimanh.cntt@gmail.com" class="hover:text-brand-accent transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:0969064100" class="hover:text-brand-accent transition" title="Điện thoại"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/hung-vi-manh-b91714216" target="_blank" class="hover:text-brand-accent transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/hungvimanh" target="_blank" class="hover:text-brand-accent transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

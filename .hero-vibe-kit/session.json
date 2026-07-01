@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "workItem": null,
+  "path": null,
+  "mode": null,
+  "phase": null,
+  "reviewBudget": null,
+  "gates": {
+    "prd": {
+      "required": false,
+      "status": "not-applicable",
+      "evidence": null
+    },
+    "plan": {
+      "required": false,
+      "status": "not-applicable",
+      "evidence": null
+    }
+  },
+  "reportSlug": null,
+  "canonicalHandoff": null,
+  "resumePath": null,
+  "nextAction": null,
+  "lastCheckpoint": null,
+  "loop": {
+    "retryCount": 0,
+    "maxRetries": 2,
+    "lastAction": null
+  }
+}

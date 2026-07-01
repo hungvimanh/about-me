@@ -1,0 +1,21 @@
+{
+  "projectName": "portfolio",
+  "teamSize": "solo",
+  "branchingModel": "github-flow",
+  "assistanceProfile": "vibecode",
+  "projectSurface": "frontend",
+  "verificationLevel": "strict",
+  "ideTargets": [
+    "claude-code"
+  ],
+  "enforceLevel": "mixed",
+  "version": "2.1.3",
+  "brownfield": true,
+  "integrations": {
+    "skills": "bundled",
+    "design": "installed",
+    "mediaGen": "skipped",
+    "gitnexus": "indexed",
+    "serena": "seeded"
+  }
+}
